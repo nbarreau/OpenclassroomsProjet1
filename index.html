@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="WebAgency">
+        <meta name="description" content="Vous avez un projet web ? la WebAgency vous aide à le réaliser!">
+        <meta name="canonical" content="https://webagency.nathalie-barreau.fr">
+        <meta property="image" content="https://webagency.nathalie-barreau.fr/images/logo.png">
+        <meta name="google-site-verification" content="2WSl_Fa-z7eTBJ-KjpjR7qqflzt1DRqlNJ6AjL-LJTs" />
+        <title>Webagency</title>
+        <link rel="icon" type="image/icon" sizes="16x16" href="images/logo-favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="style.css"/>
+        
+    </head>
+    
+    <body>
+
+        <div id="bloc_page">
+
+            <header class="header">
+                <div id="logo">
+                    <a href="#slider"><img src="images/logo.png" alt="Logo de WebAgency"/></a>
+                </div>
+                <input type="checkbox" id="burger">
+                <label id="menuburger" for="burger">
+                    <i class="fa fa-bars fa-2x"></i>
+                </label>
+                <nav class="menu1">
+                    <ul>
+                        <li><a href="#slider">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projets">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--section slider-->
+            
+            <section class="slider" id="slider">
+            
+				<div class="slider_box">
+					<input class="slider_open" type="radio" id="slider1" name="slider" checked="checked">
+					<div class="slider_item">
+						<img src="images/slider/bg1.jpg" alt="Première image de fond">
+					</div>
+                    <input class="slider_open" type="radio" id="slider2" name="slider">
+				    <div class="slider_item">
+						<img src="images/slider/bg2.jpg" alt="Seconde image de fond">
+					</div>
+					<label for="slider2" class="slider_control next control1" title="Next">
+						<i class="fa fa-angle-right chevronRight" aria-hidden="true"></i>
+					</label>
+					<label for="slider1" class="slider_control prev control2" title="Previous">
+						<i class="fa fa-angle-left chevronLeft" aria-hidden="true"></i>
+					</label>
+					<label for="slider2" class="slider_control prev control1" title="Previous">
+						<i class="fa fa-angle-left chevronLeft" aria-hidden="true"></i>
+					</label>
+					<label for="slider1" class="slider_control next control2" title="Next">
+						<i class="fa fa-angle-right chevronRight" aria-hidden="true"></i>
+					</label>
+                </div>
+                
+				<div id="slider_text">
+                    <h1> <strong> WEBAGENCY</strong>: L'<em> AGENCE </em> DE TOUS VOS PROJETS !</h1>
+                    <p>Vous avez un <em>projet web</em>? La WebAgency vous aide à le réaliser!</p>
+                    <a href="#services"> Plus d'infos </a>
+                </div>
+                <div class="blue_line"></div>
+                
+			</section>
+                        
+            <!--section services-->
+            <section id="services">
+                <div class="title">
+                    <h2> NOS SERVICES </h2>
+                    <div class="line_circle">
+                        <div class="line"> </div>
+                        <div class="circle"></div>
+                        <div class="line"> </div>
+                    </div>
+                    <div class="description"> 
+                        <p> La WebAgency vous accompagne dans tous vos projets de <em>création de sites web</em> :
+                            <em>Design</em>, <em>Conception</em>, <em>Développement</em>, <em>Référencement</em> et suivi personnalisé.
+                            Parce que vous êtes unique, nous vous proposons des solutions sur-mesure afin de répondre à votre projet.
+                        </p>
+                    </div>
+                </div>
+                <div id="details">
+                    <div id="ordi">
+                        <img src="images/main-feature.png" alt="image ordinateur">
+                    </div>
+                    <div id="list_services">
+                        <div>
+                            <span class="icon" id=icon1>
+                                <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-line-chart fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <h3 id=ux_design>UX design</h3>
+                            <p> Nous pensons et concevons votre <em>site web</em> de manière à offrir la meilleur expérience possible à vos visiteurs:
+                                <em>design</em> interactif, fonctionnalités intuitives, <em>responsive design</em>, wireframes.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="icon">
+                                <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-cubes fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <h3><em>UI design</em></h3>
+                            <p> A l'écoute de vos envies et des besoins de vos utilisateurs, nous nous engageons à vous délivrer une interface utilisateur de qualité:
+                                Ergonomie agréable, intuitive et pratique, facilité de recherches.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="icon">
+                                <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-pie-chart fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            <h3>SEO</h3>
+                            <p> Un site web bien référencé : la clé du succès! Faites confiance à nos experts <em>SEO</em> pour assurer la meilleur visibilité possible dans les <em>moteurs de recherche</em>: 
+                            <em>Référencement naturel</em>, optimisation de contenu, gestion campagne google Adwords etc... 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--section projets-->
+            <section id="projets">
+                <div class="title">
+                    <h2> NOS PROJETS </h2>
+                    <div class="line_circle">
+                        <div class="line"> </div>
+                        <div class="circle"></div>
+                        <div class="line"> </div>
+                    </div>
+                    <div class="description"> 
+                        <p> Ils nous font confiance. Découvrez ici les derniers projets réalisés par la WebAgency.</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav class="menu2"> 
+                        <ul>
+                            <li class="active"><a href="#">All Works</a><i class="fa fa-caret-down" aria-hidden="true"></i></li><!-- @whitespace
+                            --><li><a href="#">Creative</a><i class="fa fa-caret-down" aria-hidden="true"></i></li><!-- @whitespace
+                            --><li><a href="#">Corporate</a><i class="fa fa-caret-down" aria-hidden="true"></i></li><!-- @whitespace
+                            --><li><a href="#">Portfolio</a><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="portfolio">
+                    <figure>
+                        <img src="images/portfolio/01.jpg" alt="image création"/>
+                        <figcaption title="portfolio1">
+                            <h3>Optic4000</h3>
+                            <p>Site de vente de lunettes en ligne </p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/02.jpg" alt="image création"/>
+                        <figcaption title="portfolio2">
+                            <h3>Lapinou</h3>
+                            <p>Site évènementiel</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/03.jpg" alt="image création"/>
+                        <figcaption title="portfolio3">
+                            <h3>Original Pompadour</h3>
+                            <p>Site vitrine salon de coiffure</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/04.jpg" alt="image création"/>
+                        <figcaption title="portfolio4">
+                            <h3>ArchiTecture</h3>
+                            <p>Journal pour les architectes en ligne</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/05.jpg" alt="image création"/>
+                        <figcaption title="portfolio5"> 
+                            <h3>Valando</h3>
+                            <p>boutique de vêtements en ligne</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/06.jpg" alt="image création"/>
+                        <figcaption title="portfolio6">
+                            <h3>Lastsecond</h3>
+                            <p>Site de vente de voyages en ligne</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/07.jpg" alt="image création"/>
+                        <figcaption title="portfolio7">
+                            <h3>SpaceY</h3>
+                            <p>Site innovation d'Emon Lusk</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/08.jpg" alt="image création"/>
+                        <figcaption title="portfolio8">
+                            <h3>Bureau Val</h3>
+                            <p>Site de vente de fournitures de bureau en ligne</p>
+                            <div class="eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>                            
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+           
+            <!--section contact-->
+            <section id="contact">
+
+                <div class="title">
+                    <h2> NOUS CONTACTER</h2>
+                    <div class="line_circle">
+                        <div class="line"> </div>
+                        <div class="circle"></div>
+                        <div class="line"> </div>
+                    </div>
+                    <div class="description"> 
+                        <p> Pour nous contacter vous pouvez utiliser le formulaire ci-dessous ou nous appeler au 01.02.03.04.05.</p>
+                    </div>
+                </div>
+                <div id="map_contact">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680723!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1565258651648!5m2!1sfr!2sfr" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div id="contact_form">
+                        <h3>Nous contacter</h3>
+                        <p><strong>WebAgency SAS</strong><br>25 Rue d'Hauteville 75010 Paris<br>Tel: 01 02 03 04 05</p>
+                        <form method="post" action="traitement.php">
+                            <p>
+                                <label for="name"></label>
+                                <input type="text" name="name" id="name" placeholder="Nom" required="">
+                            </p>
+                            <p>
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email" required="">
+                            </p>
+                            <p>
+                                <label for="subject"></label>
+                                <input type="text" name="subject" id="subject" placeholder="Sujet" required="">
+                            </p>
+                            <p>
+                                <textarea name="message" id="message" rows="10" placeholder="Message" required=""></textarea>
+                                <input type="submit" value="Envoyer Message" id=button2>
+                            </p>
+                        </form>
+                    </div>
+
+                </div>    
+                
+            </section>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="style.js"></script>
+        <script src="https://use.fontawesome.com/a81efc9527.js"></script>
+    </body>
+</html>

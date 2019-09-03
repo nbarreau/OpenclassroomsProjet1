@@ -1,0 +1,874 @@
+/*general*/
+
+html, body
+{
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+p
+{
+    color: rgb(128, 128, 128);
+}
+
+em 
+{
+    font-style: normal;
+}
+
+.description p
+{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+nav li 
+{
+    display: inline;
+}
+
+nav a
+{
+    color:  rgb(99, 99, 99);
+    text-decoration: none;
+}
+
+
+/*header*/
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+    opacity: 0.9;
+    z-index: 99;
+}
+
+#logo
+{
+    margin-left: 100px;
+}
+
+header nav
+{
+    width: 100%;
+    margin-right: 100px;
+    text-align: right;
+}
+
+header nav li
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+header nav li:hover 
+{
+    border-top: 3px  rgb(95, 170, 204) solid;
+    padding-top: 28px;
+}
+
+header a:hover 
+{
+    color:  rgb(0,0,0);
+}
+
+.header input
+{
+    display: none;
+}
+
+#menuburger
+{
+    opacity: 0;
+}
+
+
+/*slider*/
+
+.slider 
+{
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.slider_box 
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider_open 
+{
+    display: none;
+}
+
+.slider_open:checked + .slider_item 
+{
+    position: static;
+    opacity: 1;
+}
+
+.slider_item img 
+{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.slider_item 
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.slider_control 
+{
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    display: none;    
+    z-index: 98;
+}
+
+.slider_control i
+{
+    padding-top: 11px;
+}
+
+.slider_control.prev 
+{
+    left: 0;
+    border-radius: 0px 40px 40px 0px;
+    text-align: left;
+}
+
+.slider_control.next 
+{
+    border-radius: 40px 0px 0px 40px;
+    right: 0;
+    text-align: right;
+}
+
+#slider1:checked ~ .control1, #slider2:checked ~ .control2 
+{
+    display: block;
+}
+
+#slider_text 
+{
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
+}
+
+#slider_text p 
+{
+    color: rgb(250, 250, 250);
+    padding-bottom: 25px;
+}
+
+#slider_text a
+{
+    background-color:rgb(95, 170, 204);
+    color: rgb(250, 250, 250);
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(68,148,187);
+}
+
+h1 
+{
+    color:  rgb(250, 250, 250);
+    width: 600px;
+    font-size: 35px;
+}
+
+h1 strong 
+{
+    color: rgb(95, 170, 204);
+}
+
+.blue_line {
+    border: 2px solid rgb(95, 170, 204);
+    width: 15%;
+    position: absolute;
+    bottom: 0.5px;
+    z-index: 8;
+}
+
+
+
+/*services*/
+
+#services
+{
+    margin-top: 50px;
+}
+
+#details
+{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+#list_services
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 5%;
+}
+
+#list_services p
+{
+    margin-right: 25%;
+}
+
+#ordi
+{
+    margin-top: 60px;
+    margin-left: 10%;
+}
+
+#icon1, #ux_design
+{
+    margin-top: 70px;
+}
+
+.icon_text
+{
+height: 160px;
+}
+
+.icon
+{
+    color: rgb(95, 170, 204);
+    float: left;
+    width:100px;
+}
+
+.line_circle 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.line 
+{
+    width: 50px;
+    height: 2px;
+    background-color:rgb(210, 210, 210) ;
+    border: none; 
+    opacity: 0.4;
+}
+
+.circle 
+{
+    width: 15px;
+    height: 15px;
+    background: rgb(95, 170, 204);
+    border-radius: 50%;
+}
+
+.fa.fa-circle-thin 
+{
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.fa.fa-circle 
+{
+    position: relative;
+    font-size: 15px;
+    border: 6px solid rgb(254, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    left: 50px;
+    bottom: 75px;  
+}
+
+.fa.fa-line-chart, .fa.fa-cubes
+{
+    position: relative;
+    left: -19px;
+    bottom: 47px;
+}
+
+.fa.fa-pie-chart
+{
+    position: relative;
+    left: -18px;
+    bottom: 47px;
+}
+
+
+/*projets*/
+
+#projets
+{
+    background-color: rgb(245, 245, 245);
+    padding-top: 20px;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 40px 0px; 
+}
+
+.menu2 ul
+{
+    background-color: rgb(229, 229, 229);
+    padding: 5px 0px 15px 0px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.menu2 li 
+{
+    padding: 15px 0px 15px 15px;
+}
+
+.menu2 li i
+{
+    opacity: 0;
+    font-size: 30px;
+    position: relative;
+    top: 36px;
+    right: 37px;
+    color: rgb(73, 140, 171);
+}
+
+.menu2 li:hover, .menu2 li:active
+{
+    background-color: rgb(95, 170, 204);
+    border-bottom: 5px solid rgb(73, 140, 171);
+}
+
+.menu2 li:hover a, .menu2 li:active a 
+{
+    color: rgb(255, 255, 255);
+}
+
+.menu2 li:hover i, .menu2 li:active i
+{
+    opacity: 1;
+}
+
+.menu2 li:nth-child(4):hover, .menu2 li:nth-child(4):active
+{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.menu2 li:nth-child(1):hover, .menu2 li:nth-child(1):active, .menu2 li.active
+{
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgb(95, 170, 204);
+    border-bottom: 5px solid rgb(73, 140, 171);
+}
+
+.menu2 li.active a 
+{
+    color: rgb(250, 250, 250);
+}
+
+.menu2 li.active i
+{
+    opacity: 1;
+}
+
+.portfolio
+{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio img
+{
+    height: 250px;
+    width: 350px;
+    position: relative;
+    padding: 15px;
+}
+
+figure
+{
+    margin: 0px;
+    position: relative;
+}
+
+figure:hover 
+{
+    cursor: pointer;
+}
+
+figcaption 
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    visibility: hidden;
+    bottom: 17px;
+    width: 350px;
+    margin-left: 15px;
+}
+
+figure:hover figcaption 
+{
+    visibility: visible;
+}
+
+figcaption h3, figcaption p 
+{
+    margin-left: 10px;
+    line-height: 70%;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.eye 
+{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(95, 170, 204);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+}
+
+.fa.fa-eye 
+{
+    position: relative;
+    top: 5px;
+    left: 7px;
+}
+
+
+
+
+/*Contact*/
+
+#contact
+{
+    padding-top: 20px;
+}
+
+#map_contact
+{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+#map
+{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    z-index: 1;
+    background-color:rgb(95, 170, 204);
+}
+
+
+form p input, textarea
+{
+    width: 100%;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-size: 12px;
+}
+
+textarea 
+{
+    resize: none;
+}
+
+iframe 
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+#contact_form
+{
+    padding: 15px;
+    margin-top: 5%;
+    margin-left: 70%;
+    margin-right: 5%;
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+#button2
+{
+    padding: 10px;
+    background-color: rgb(95, 170, 204);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    width: 50%;
+    border: none;
+    border-bottom: 3px solid rgb(68,148,187);
+}
+
+
+
+
+/* -----------------------------tablettes-------------------------------- */
+
+@media only screen and (max-width : 768px)
+
+{
+
+    h1,h2
+    {
+        font-size: 20px;
+    }
+
+    h1 
+    {
+        width: 350px;
+    }
+
+    /*header*/
+
+    #logo
+    {
+        margin-left: 5%;
+    }
+
+    .header input 
+    {
+        display: none;
+    }
+
+    #menuburger
+    {
+        opacity: 1;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        color: rgb(95, 170, 204);
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 90%;
+    }
+
+    header nav
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header nav ul
+    {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    header nav ul li 
+    {
+        display: inherit;
+        padding: 0px;
+        display:flex;
+        justify-content: center;
+    }
+
+    header nav ul li a
+    {
+       font-size: 20px;
+       width: 100%;
+       padding: 5%;
+    }
+
+    header nav li:hover 
+    {
+    padding-top: 0px;
+    }
+
+    .menu1
+    {
+        display: none;
+    } 
+
+    header.active .menu1
+    {
+        display: block;
+        position: absolute;
+        top: 80px;
+        z-index: 99;
+        text-align: center;
+    }
+
+    header.active .menu1 a 
+    {
+        color: rgb(250, 250, 250);
+        
+    }
+
+    header.active .menu1 li 
+    {
+        border: 1px solid rgb(68,148,187);
+        background-color: rgb(95, 170, 204);
+    }
+
+    /* slider */
+
+    #slider_text
+    {
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    #slider_text h1, p
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* services */
+
+    #details
+    {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description p 
+    {
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+
+    #ordi, #ordi img, #list_services
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #list_services
+    {
+        margin-bottom: 20px;
+        margin-left: 0%;
+    }
+
+    #list_services p 
+    {
+        margin-right: 10%;
+    }
+
+    #ordi
+    {
+    margin-left: 0%;
+    }
+
+    #ux_design, #icon1
+    {
+        margin-top: 10px;
+    }
+
+    
+    /* projets */
+
+    figcaption 
+    {
+        visibility: visible;
+        padding-bottom: 10px;
+    }
+
+    /*contacts*/
+
+
+    #contact_form
+    {
+        margin-left: 55%;
+    }
+
+}
+
+
+/*------------------------------smartphone---------------------------------- */
+
+
+@media only screen and (max-width : 420px)
+{
+
+    /* header */
+
+    header nav ul li 
+    {
+        padding: 0px;
+    }
+
+    header nav ul li a
+    {
+       font-size: 20px;
+    }
+
+    header nav li:hover 
+    {
+    padding-top: 0px;
+    }
+
+    header nav 
+    {
+        margin-right: 65px;
+    }
+
+    header img 
+    {
+        width: 95%;
+    }
+
+    /* slider */
+
+    #slider_text
+    {
+        width: 100%;
+        margin-top: 30%;
+        text-align: center;
+        left: 0%;
+    }
+
+    #slider_text p 
+    {
+    color: rgb(128, 128, 128);
+    width: 100%;
+    font-size: 14px;
+    }
+
+    #slider_text h1
+    {
+        color: rgb(0, 0, 0);
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* services */
+
+    #services
+    {
+        margin-top: 200px;
+    }
+
+    .icon
+    {
+        padding-bottom: 120px;
+    }
+
+    #list_services p 
+    {
+        margin-right: 10px;
+    }
+
+    #ordi
+    {
+    margin-left: 0%;
+    }
+
+    /*projets*/
+
+
+    .menu2 ul 
+    {
+        padding-bottom: 0px;
+        height: 50px;
+    }
+
+    .menu2 ul li a 
+
+    {
+        font-size: 12px;
+    }
+
+    figure 
+    {
+        width: 100%;
+    }
+
+    .portfolio img 
+    {
+        width: 100%;
+        padding: 0px;
+    }
+
+    figcaption
+    {
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0px;
+        bottom: 4px;
+    }
+
+
+    /* contact */
+
+    #map_contact
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact_form
+    {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 40px;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    #map
+    {
+        display: none;
+    }
+
+}
